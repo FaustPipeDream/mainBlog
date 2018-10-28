@@ -1,7 +1,6 @@
 package com.mainblog.repository;
 
 import com.mainblog.entity.BaseUserEntity;
-import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -15,5 +14,5 @@ public interface BaseUserRepository extends JpaRepository<BaseUserEntity,Integer
     * @param userName 用户名
    * @return 用户实体
    */
-  BaseUserEntity findBaseUserRepositoriesByUserName(String userName);
+  BaseUserEntity findBaseUserEntityByUserName(String userName);
 }

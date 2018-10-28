@@ -19,7 +19,7 @@ public class MainBlogApplicationTests {
 
   @Test
   public void contextLoads() {
-    BaseUserEntity admin = baseUserRepository.findBaseUserRepositoriesByUserName("admin");
+    BaseUserEntity admin = baseUserRepository.findBaseUserEntityByUserName("admin");
     assertEquals("admin", admin.getLoginName());
   }
 
